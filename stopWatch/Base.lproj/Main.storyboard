@@ -30,38 +30,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fx-fk-Z08">
-                                <rect key="frame" x="80" y="318" width="95" height="30"/>
-                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="START">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfn-wY-BG8">
+                                <rect key="frame" x="151" y="331" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="Start1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pl-vg-lZg"/>
-                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5aj-to-Ndc"/>
+                                    <action selector="_btnStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaM-wT-k4y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewM-Ts-f4D">
-                                <rect key="frame" x="197" y="318" width="95" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWh-ar-EsF">
+                                <rect key="frame" x="226" y="331" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="RESET">
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5qv-Ho-lgc"/>
+                                    <action selector="_btnReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XdO-gs-tvt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqk-LY-SKf">
-                                <rect key="frame" x="140" y="379" width="95" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzb-ft-rGW">
+                                <rect key="frame" x="73" y="331" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Pause">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="Pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1z-si-2MN"/>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyr-6i-7AX"/>
+                                    <action selector="_btnStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHT-PM-V5n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,7 +71,6 @@
                             <constraint firstItem="PFd-gK-5YY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CdH-7E-Oco"/>
                             <constraint firstItem="PFd-gK-5YY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="KTc-lK-vhc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PFd-gK-5YY" secondAttribute="bottom" constant="373" id="dlL-IZ-9xJ"/>
-                            <constraint firstItem="7Fx-fk-Z08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y9X-I8-SiX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -81,6 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="100.29985007496252"/>
         </scene>
     </scenes>
 </document>
